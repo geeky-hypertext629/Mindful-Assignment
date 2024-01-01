@@ -10,24 +10,24 @@ const mongo = require("./config/mongo");
 const apiRouter = require("./routes");
 const APIError = require("./utils/APIError");
 
-const corsOptions = {
-    origin: (origin, callback) => {
-        callback(null, true);
-    },
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    allowedHeaders: [
-        "Access-Control-Allow-Origin",
-        "Origin",
-        "X-Requested-With",
-        "Content-Type",
-        "Accept",
-        "Authorization",
-    ],
-    credentials: true,
-};
+// const corsOptions = {
+//     origin: (origin, callback) => {
+//         callback(null, true);
+//     },
+//     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+//     allowedHeaders: [
+//         "Access-Control-Allow-Origin",
+//         "Origin",
+//         "X-Requested-With",
+//         "Content-Type",
+//         "Accept",
+//         "Authorization",
+//     ],
+//     credentials: true,
+// };
 
 const app = express();
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
