@@ -10,7 +10,7 @@ const axios = _axios.create({
     baseURL:
         import.meta.env.MODE != "development"
             ? "/api"
-            : "http://localhost:5000/api",
+            : "https://mindfulbackend.azurewebsites.net/api",
     timeout: 3000,
     headers: {
         Accept: "application/json",
