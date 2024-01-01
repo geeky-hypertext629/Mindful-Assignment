@@ -32,5 +32,5 @@
         "tailwindcss": "^3.1.7",
         "vite": "^3.0.0"
     },
-    "proxy" : "https://mindfulbackend.azurewebsites.net/api"
+    "proxy" : "http://mindfulbackend.azurewebsites.net/api"
 }
