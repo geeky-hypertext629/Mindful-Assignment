@@ -31,6 +31,5 @@
         "prettier-plugin-tailwindcss": "^0.1.13",
         "tailwindcss": "^3.1.7",
         "vite": "^3.0.0"
-    },
-    "proxy" : "http://mindfulbackend.azurewebsites.net/api"
+    }
 }
